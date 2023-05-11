@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gmail API Quickstart</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css">
+  </link>
+</head>
+
+<body>
+  <style>
+    .table-header {
+        width:80px;
+        background-color:#00c1d5; 
+        color:#FFFFFF; 
+        font-size: 16px; 
+        font-weight:bold; 
+        text-align:center;
+    }
+  </style>
+  <p>Gmail API Quickstart</p>
+
+  <!--Add buttons to initiate auth sequence and sign out-->
+  <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+  <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+
+  <pre id="content" style="white-space: pre-wrap;"></pre>
+
+  <table id="transactions"></table>
+  <script type="text/javascript" src="./build/src/index.js"></script>
+  <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+  <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+</body>
+
+</html>

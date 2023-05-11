@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "gts": "^3.1.1",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run lint"
+  },
+  "dependencies": {
+    "@types/gapi": "^0.0.44",
+    "@types/google.accounts": "^0.0.7",
+    "gapi": "^0.0.3",
+    "http-server": "^14.1.1"
+  }
+}

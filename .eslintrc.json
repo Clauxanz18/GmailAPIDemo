@@ -1,0 +1,12 @@
+{
+  "extends": "./node_modules/gts/",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error", {
+        "endOfLine": "auto",
+        "tabWidth": 4
+      }
+    ]
+  }
+}
